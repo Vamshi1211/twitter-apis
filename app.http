@@ -1,0 +1,77 @@
+POST http://localhost:3000/register/
+Content-Type: application/json
+
+{
+  "username": "vamshi",
+  "password": "vamshi@1211",
+  "name": "Vamshi Gundepangu",
+  "gender": "male"
+}
+###
+
+POST http://localhost:3000/login/
+Content-Type: application/json
+
+{
+  "username":"vamshi",
+  "password":"vamshi@1211"
+}
+
+###
+GET http://localhost:3000/user/tweets/feed/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoyLCJpYXQiOjE3MTAwODY0Nzd9.QIG3OYZHy-xVX9fLX7UNUE24naghgoaiKufLa-XmY4M
+
+###
+GET http://localhost:3000/user/following/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoyLCJpYXQiOjE3MTAwODY0Nzd9.QIG3OYZHy-xVX9fLX7UNUE24naghgoaiKufLa-XmY4M
+
+###
+GET http://localhost:3000/user/followers/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoyLCJpYXQiOjE3MTAwODY0Nzd9.QIG3OYZHy-xVX9fLX7UNUE24naghgoaiKufLa-XmY4M
+
+
+###
+GET http://localhost:3000/tweets/7/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoyLCJpYXQiOjE3MTAwODY0Nzd9.QIG3OYZHy-xVX9fLX7UNUE24naghgoaiKufLa-XmY4M
+
+###
+
+GET http://localhost:3000/tweets/8/likes/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoyLCJpYXQiOjE3MTAwODY0Nzd9.QIG3OYZHy-xVX9fLX7UNUE24naghgoaiKufLa-XmY4M
+
+###
+GET http://localhost:3000/tweets/8/replies/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoyLCJpYXQiOjE3MTAwODY0Nzd9.QIG3OYZHy-xVX9fLX7UNUE24naghgoaiKufLa-XmY4M
+
+###
+
+GET http://localhost:3000/user/tweets/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoyLCJpYXQiOjE3MTAwODY0Nzd9.QIG3OYZHy-xVX9fLX7UNUE24naghgoaiKufLa-XmY4M
+
+###
+POST http://localhost:3000/user/tweets/
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoyLCJpYXQiOjE3MTAwODY0Nzd9.QIG3OYZHy-xVX9fLX7UNUE24naghgoaiKufLa-XmY4M
+
+{
+   "tweet": "The Mornings are beautiful."
+}
+
+###
+DELETE http://localhost:3000/tweets/12/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoyLCJpYXQiOjE3MTAwODY0Nzd9.QIG3OYZHy-xVX9fLX7UNUE24naghgoaiKufLa-XmY4M
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
